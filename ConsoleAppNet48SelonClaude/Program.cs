@@ -145,9 +145,9 @@ namespace ConsoleAppNet48SelonClaude
         Console.WriteLine("Impossible de créer le fichier de verrouillage (droits insuffisants).");
         return false;
       }
-      catch (Exception ex)
+      catch (Exception exception)
       {
-        Console.WriteLine($"Erreur lors de la création du fichier de verrouillage: {ex.Message}");
+        Console.WriteLine($"Erreur lors de la création du fichier de verrouillage: {exception.Message}");
         return false;
       }
     }
@@ -196,9 +196,9 @@ namespace ConsoleAppNet48SelonClaude
           Console.WriteLine("Fichier de verrouillage fermé.");
         }
       }
-      catch (Exception ex)
+      catch (Exception exception)
       {
-        Console.WriteLine($"Erreur lors du nettoyage: {ex.Message}");
+        Console.WriteLine($"Erreur lors du nettoyage: {exception.Message}");
       }
     }
 
