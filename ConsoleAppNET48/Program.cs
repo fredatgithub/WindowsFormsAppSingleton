@@ -46,7 +46,9 @@ namespace ConsoleAppNET48
         {
           // Libération uniquement si on détient le mutex
           if (hasHandle)
+          {
             mutex.ReleaseMutex();
+          }
         }
       }
 
